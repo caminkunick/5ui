@@ -8,3 +8,4 @@ bun.lockb
 public/index.css
 public/index.js
 public/index.js.map
+*.log
