@@ -1,4 +1,4 @@
-# 5UI
+# %PROJECT_NAME%
 
 run the following command to install dependencies
 ```bash

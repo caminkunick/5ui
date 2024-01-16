@@ -8,7 +8,7 @@
     "watch:css": "sass --watch src/index.scss public/index.css --no-source-map --style=compressed",
     "watch:js": "NODE_ENV=development esbuild --watch src/index.tsx --bundle --sourcemap --outfile=public/index.js",
     "build": "node build.js",
-    "watch:html": "browser-sync start --server public --files \"public/**/*\"",
+    "watch:html": "browser-sync start --server public --files \"public/**/*\" --no-notify",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\""
   },
   "bun-create": {
