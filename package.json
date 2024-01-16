@@ -1,0 +1,28 @@
+{
+  "name": "5ui-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "sass --watch src/index.scss public/index.css --no-source-map --style=compressed",
+    "watch:js": "NODE_ENV=development esbuild --watch src/index.tsx --bundle --sourcemap --outfile=public/index.js",
+    "build": "node build.js",
+    "watch:html": "browser-sync start --server public --files \"public/**/*\"",
+    "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\"",
+    "postscript": "node postScript.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "preact": "^10.19.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.4",
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.19.11",
+    "sass": "^1.69.7",
+    "terser": "^5.26.0",
+    "typescript": "^5.3.3"
+  }
+}
