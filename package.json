@@ -11,7 +11,10 @@
     "watch:html": "browser-sync start --server public --files \"public/**/*\"",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\""
   },
-  "author": "",
+  "bun-create": {
+    "postinstall": ["node postScript.js"]
+  },
+  "author": "caminkunick",
   "license": "ISC",
   "dependencies": {
     "preact": "^10.19.3"
